@@ -1,2 +1,2 @@
 # college-project
-a simple bank system handle transaction between fixed number of clients
+a simple bank system handle transactions between fixed number of clients
