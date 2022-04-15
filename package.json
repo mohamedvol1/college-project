@@ -1,0 +1,35 @@
+{
+  "name": "basicbankingsystem_1",
+  "version": "1.0.0",
+  "description": "basic bank system that handles clients transfers",
+  "main": "server/src/server.js",
+  "engines": {
+    "node": "16.6.2",
+    "npm": "8.3.0"
+  },
+  "scripts": {
+    "start": "cd server && node src/server.js",
+    "watch": "cd server && nodemon src/server.js",
+    "client": "cd client && npm start",
+		"build": "cd client && npm run build",
+		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+		"heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "pg-promise": "^10.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedvol1/Basic-Bank-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedvol1/Basic-Bank-System/issues"
+  },
+  "homepage": "https://github.com/mohamedvol1/Basic-Bank-System#readme"
+}
